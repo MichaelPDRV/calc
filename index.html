@@ -16,7 +16,7 @@
     <br><br>
     <button onclick="calc()">Посчитать!</button>
     <br><br>
-    Стоимость за кг:
+    Итого за кг:
 <b><p id="total"></p></b>
 
     <script>
@@ -26,7 +26,7 @@ function calc(){
     let result
     num = document.getElementById('cost').value
     num2 = document.getElementById('weight').value
-    result = (num/num2)*1000
+    result = parseInt((num/num2)*1000) + " руб"
     document.getElementById('total').innerHTML = result
 }
 
