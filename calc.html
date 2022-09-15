@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>Стоимость<br>
+    <input id="cost" type="text" placeholder="" />
+    <br><br><br>Вес продукта<br>
+    <input id="weight" type="text" placeholder="" />
+
+    
+    <br><br>
+    <button onclick="calc()">Посчитать!</button>
+    <br><br>
+    Стоимость за кг:
+<b><p id="total"></p></b>
+
+    <script>
+function calc(){
+    let num 
+    let num2
+    let result
+    num = document.getElementById('cost').value
+    num2 = document.getElementById('weight').value
+    result = (num/num2)*1000
+    document.getElementById('total').innerHTML = result
+}
+
+    </script>
+</body>
+</html>
